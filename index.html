@@ -23,43 +23,43 @@
         aria-label="Main navigation"
       >
         <a
-          href="#"
+          href="index.html"
           class="text-sm font-semibold text-slate-700 transition hover:text-blue-600 md:text-base"
           >Home</a
         >
         <a
-          href="#"
+          href="AboutUs.html"
           class="text-sm font-semibold text-slate-700 transition hover:text-blue-600 md:text-base"
           >About us</a
         >
         <a
-          href="#"
+          href="Services.html"
           class="text-sm font-semibold text-slate-700 transition hover:text-blue-600 md:text-base"
           >Services</a
         >
         <a
-          href="#"
+          href="Doctors.html"
           class="text-sm font-semibold text-slate-700 transition hover:text-blue-600 md:text-base"
           >Doctors</a
         >
       </nav>
     </header>
     <main>
-      <section class="relative h-[500px] overflow-hidden">
+      <section class="relative h-[500px] overflow-visible">
         <div
           class="absolute inset-0 bg-cover bg-center"
-          style="background-image: url(&quot;bg.png&quot;)"
+          style="background-image: url(&quot;bg.png &quot;)"
         ></div>
         <div class="absolute inset-0 bg-slate-900/45"></div>
 
         <div class="relative z-10 flex h-full items-center px-6 md:px-16">
           <div class="max-w-xl text-white">
             <h1 class="text-4xl font-bold leading-tight md:text-5xl">
-              Healthcare that comes to you
+              Healthcare that comes to you.
             </h1>
             <p class="mt-4 text-base text-slate-200 md:text-lg">
               Speak with qualified healthcare professionals from the comfort of
-              your home.
+              your home
             </p>
             <div class="mt-8 flex gap-4">
               <button
@@ -68,13 +68,132 @@
                 Find a doctor
               </button>
               <button
-                class="border bg-white/30 px-6 py-3 text-sm font-semibold text-blue transition hover:bg-#FFFFFF/20"
+                type="button"
+                class="bg-white/30 px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-white/20"
               >
                 Learn More
               </button>
             </div>
           </div>
         </div>
+      </section>
+
+      <section class="relative bg-white px-6 py-12 md:px-16 md:py-16">
+        <div class="">
+          <div class="flex items-center gap-5 mb-6">
+            <img
+              src="phone.png"
+              alt="Health care assistance"
+              class="h-12 w-12 object-contain"
+            />
+            <div>
+              <h2 class="text-lg font-bold text-slate-900">
+                Health care assistance
+              </h2>
+              <p class="mt-1 text-slate-600">+234 903 744 8857</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-5">
+            <img
+              src="phone.png"
+              alt="Routine consultation"
+              class="h-12 w-12 object-contain"
+            />
+            <div>
+              <h2 class="text-lg font-bold text-slate-900">
+                Routine consultation
+              </h2>
+              <p class="mt-1 text-slate-600">Mon - Fri, 9:00am - 8:00pm</p>
+            </div>
+          </div>
+        </div>
+        <form
+          class="absolute bottom-[-100px] right-6 z-20 w-[calc(100%-3rem)] max-w-xl bg-white p-6 shadow-2xl md:right-16 md:p-8"
+          action="success.html"
+          method="get"
+        >
+          <h2 class="text-2xl font-bold text-slate-900 md:text-3xl">
+            Request an appointment
+          </h2>
+          <p class="mt-2 text-sm leading-6 text-slate-600">
+            Tell us a little about yourself and our care team will get back to
+            you.
+          </p>
+
+          <div class="mt-6 grid gap-4 md:grid-cols-2">
+            <div>
+              <label
+                for="first-name"
+                class="text-sm font-semibold text-slate-700"
+                >First name</label
+              >
+              <input
+                id="Name"
+                name="Name"
+                type="text"
+                required
+                class="mt-2 w-full rounded-lg border border-slate-300 px-4 py-3 text-sm outline-none transition focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
+                placeholder="First name"
+              />
+            </div>
+            <div>
+              <label
+                for="last-name"
+                class="text-sm font-semibold text-slate-700"
+                >Last name</label
+              >
+              <input
+                id="last-name"
+                name="last-name"
+                type="text"
+                required
+                class="mt-2 w-full rounded-lg border border-slate-300 px-4 py-3 text-sm outline-none transition focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
+                placeholder="Last name"
+              />
+            </div>
+            <div>
+              <label for="phone" class="text-sm font-semibold text-slate-700"
+                >Phone number</label
+              >
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                required
+                class="mt-2 w-full rounded-lg border border-slate-300 px-4 py-3 text-sm outline-none transition focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
+                placeholder="+234 000 000 0000"
+              />
+            </div>
+            <div>
+              <label for="service" class="text-sm font-semibold text-slate-700"
+                >Service</label
+              >
+              <select
+                id="service"
+                name="service"
+                class="mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-sm text-slate-600 outline-none transition focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
+              >
+                <option>Choose a service</option>
+                <option>Routine consultation</option>
+                <option>Home care assistance</option>
+              </select>
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            class="mt-6 w-full rounded-lg bg-[#1E3A8A] px-6 py-3 font-semibold text-white shadow-md transition hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2"
+          >
+            Request appointment
+          </button>
+        </form>
+      </section>
+      <section>
+        <center>
+          <h2 class="font-bold text-[#1E3A8A] text-4xl justify-center">
+            Our Services
+          </h2>
+        </center>
       </section>
     </main>
   </body>
