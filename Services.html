@@ -1,21 +1,207 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>services</title>
-    script src="tailwind.js"></script>
-</head>
-<body>
-<Header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="doctors.html">Doctors</a>
-        </ul>
-    </nav>
-</Header>    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A.P.E.D. | Services</title>
+    <script src="tailwind.js"></script>
+  </head>
+  <body class="m-0 bg-white font-sans text-slate-950">
+    <header
+      class="flex h-14 items-center justify-between border-b border-slate-300 bg-white px-4 md:px-8"
+    >
+      <a
+        href="index.html"
+        class="h-10 w-32 shrink-0"
+        aria-label="A.P.E.D. home"
+      >
+        <img
+          src="logo.png"
+          alt="A.P.E.D. healthcare"
+          class="h-full w-full object-contain object-left"
+        />
+      </a>
+      <nav
+        class="flex items-center gap-4 text-xs md:gap-8 md:text-sm"
+        aria-label="Main navigation"
+      >
+        <a href="index.html" class="py-5 transition hover:text-[#1f43a0]"
+          >Home</a
+        >
+        <a href="AboutUs.html" class="py-5 transition hover:text-[#1f43a0]"
+          >About us</a
+        >
+        <a
+          href="Services.html"
+          class="border-b-2 border-[#1f43a0] py-5 font-medium text-[#1f43a0]"
+          aria-current="page"
+          >Services</a
+        >
+        <a href="Doctors.html" class="py-5 transition hover:text-[#1f43a0]"
+          >Doctors</a
+        >
+      </nav>
+    </header>
+
+    <main>
+      <section
+        class="relative flex h-64 items-center justify-center overflow-hidden bg-slate-200 md:h-[318px]"
+        aria-labelledby="services-title"
+      >
+        <img
+          src="bg2.jpg"
+          alt="Doctor ready to provide care"
+          class="absolute inset-0 h-full w-full object-cover object-center"
+        />
+        <div class="absolute inset-0 bg-white/45"></div>
+        <div class="relative text-center">
+          <h1
+            id="services-title"
+            class="text-3xl font-extrabold uppercase tracking-tight text-[#2146a5] md:text-4xl"
+          >
+            Our services
+          </h1>
+          <div class="mx-auto mt-3 h-1 w-12 bg-[#2146a5]"></div>
+        </div>
+      </section>
+
+      <section
+        class="mx-auto max-w-5xl px-5 py-12 md:px-12 md:py-16"
+        aria-label="Our healthcare services"
+      >
+        <div
+          class="grid items-center gap-8 py-2 md:grid-cols-[minmax(210px,280px)_1fr] md:gap-16 md:py-3"
+        >
+          <img
+            src="bg doc.png"
+            alt="Doctor reviewing a patient's information"
+            class="h-52 w-full object-cover md:h-52"
+          />
+          <div>
+            <h2 class="text-xl font-extrabold text-[#21428f] md:text-2xl">
+              General consultation
+            </h2>
+            <p class="mt-2 max-w-2xl text-sm leading-[1.18] md:text-base">
+              Visit a doctor for any health concerns, symptoms or general health
+              needs and receive guidance on what to do next. Connect with a
+              qualified healthcare professional online to discuss your health
+              concerns, understand your symptoms, ask important questions, and
+              receive personalized advice and guidance. Get the support you
+              need, learn about your care options, and know the appropriate next
+              steps all from the comfort and privacy of your home.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="grid items-center gap-8 py-7 md:grid-cols-[1fr_minmax(210px,280px)] md:gap-16 md:py-7"
+        >
+          <div class="text-left md:text-right">
+            <h2 class="text-xl font-extrabold text-[#21428f] md:text-2xl">
+              Follow-up care
+            </h2>
+            <p class="mt-2 text-sm leading-[1.18] md:text-base">
+              Regular follow-ups and treatment monitoring, manage recovery and
+              make sure treatment works well. Stay connected with your
+              healthcare professional after your consultation through regular
+              check-ins, progress monitoring, and continued guidance to help you
+              manage your care, address new concerns, and make adjustments when
+              necessary and ensure your treatment continues to meet your
+              healthcare needs.
+            </p>
+          </div>
+          <img
+            src="lap.png"
+            alt="Laptop showing a patient care portal"
+            class="h-52 w-full object-cover"
+          />
+        </div>
+
+        <div
+          class="grid items-center gap-8 py-2 md:grid-cols-[minmax(210px,280px)_1fr] md:gap-16 md:py-3"
+        >
+          <img
+            src="image.png"
+            alt="Virtual health advice appointment"
+            class="h-52 w-full object-cover"
+          />
+          <div>
+            <h2 class="text-xl font-extrabold text-[#21428f] md:text-2xl">
+              Health advice
+            </h2>
+            <p class="mt-2 max-w-2xl text-sm leading-[1.18] md:text-base">
+              Get expert health tips and guidance to help you manage your health
+              and make informed care decisions. Get clear and reliable
+              healthcare advice from qualified professionals to help you better
+              understand your health concerns, learn about available care
+              options, make informed decisions, and receive practical guidance
+              that support your well-being. Receive helpful tips and guidance to
+              support healthier everyday choices and improve your overall
+              well-being.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#101735] px-8 py-10 text-white md:px-16">
+      <div
+        class="mx-auto grid max-w-5xl gap-8 text-[10px] leading-5 text-slate-300 md:grid-cols-4 md:gap-12"
+      >
+        <div>
+          <div class="text-xl font-extrabold tracking-wide text-white">
+            <span class="mr-1 inline-block bg-white px-1 text-[#101735]">+</span
+            >A.P.E.D.
+          </div>
+          <p class="mt-4 max-w-[150px] leading-3">
+            Speak to qualified healthcare professionals from the comfort of your
+            home.
+          </p>
+          <div class="mt-4 flex gap-2">
+            <a
+              href="#"
+              class="border border-slate-700 px-2 py-1"
+              aria-label="LinkedIn"
+              >in</a
+            ><a
+              href="#"
+              class="border border-slate-700 px-2 py-1"
+              aria-label="Instagram"
+              >◎</a
+            >
+          </div>
+        </div>
+        <div>
+          <h2 class="mb-3 text-[11px] font-medium text-white">Navigation</h2>
+          <a class="block hover:text-white" href="AboutUs.html">About us</a
+          ><a class="block hover:text-white" href="Doctors.html">Works</a
+          ><a class="block hover:text-white" href="Services.html">Services</a
+          ><a class="block hover:text-white" href="Doctors.html">Doctors</a>
+        </div>
+        <div>
+          <h2 class="mb-3 text-[11px] font-medium text-white">Services</h2>
+          <a class="block hover:text-white" href="#">General consultation</a
+          ><a class="block hover:text-white" href="#">Follow-up care</a
+          ><a class="block hover:text-white" href="#">Health advice</a>
+        </div>
+        <div>
+          <h2 class="mb-3 text-[11px] font-medium text-white">Let's Connect</h2>
+          <p>✉ &nbsp; Apedhealthcare.com</p>
+          <p>⌕ &nbsp; +234 903 744 8857</p>
+          <p>⌖ &nbsp; Lagos, Nigeria</p>
+        </div>
+      </div>
+      <div
+        class="mx-auto mt-8 flex max-w-5xl justify-between border-t border-slate-800 pt-3 text-[9px] text-slate-400"
+      >
+        <span
+          >healthcare that comes to you.<br />© 2028 A.P.E.D health care</span
+        ><a
+          href="#services-title"
+          class="border border-slate-700 px-3 py-1 hover:text-white"
+          >↑ &nbsp; Back to top</a
+        >
+      </div>
+    </footer>
+  </body>
 </html>
