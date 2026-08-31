@@ -7,57 +7,56 @@
     <script src="tailwind.js"></script>
   </head>
   <body class="m-0 bg-white font-sans text-slate-950">
-    <header
-      class="flex h-14 items-center justify-between border-b border-slate-300 bg-white px-4 md:px-8"
+     <header
+      class="flex items-center justify-between shadow-sm bg-white md:px-10"
     >
-      <a
-        href="index.html"
-        class="h-10 w-32 shrink-0"
-        aria-label="A.P.E.D. home"
-      >
+      <div class="w-[180px] h-[90px]">
         <img
           src="logo.png"
-          alt="A.P.E.D. healthcare"
-          class="h-full w-full object-contain object-left"
+          alt="logo of the healthcare "
+          class="w-full h-full"
         />
-      </a>
+      </div>
+
       <nav
-        class="flex items-center gap-4 text-xs md:gap-8 md:text-sm"
+        class="flex items-center gap-6 md:gap-10"
         aria-label="Main navigation"
       >
-        <a href="index.html" class="py-5 transition hover:text-[#1f43a0]"
+        <a
+          href="index.html"
+          class="text-sm font-semibold text-slate-700 transition hover:text-blue-600 md:text-base"
           >Home</a
         >
-        <a href="AboutUs.html" class="py-5 transition hover:text-[#1f43a0]"
+        <a
+          href="AboutUs.html"
+          class="text-sm font-semibold text-slate-700 transition hover:text-blue-600 md:text-base"
           >About us</a
         >
         <a
           href="Services.html"
-          class="border-b-2 border-[#1f43a0] py-5 font-medium text-[#1f43a0]"
-          aria-current="page"
+          class="text-sm font-semibold text-slate-700 transition hover:text-blue-600 md:text-base"
           >Services</a
         >
-        <a href="Doctors.html" class="py-5 transition hover:text-[#1f43a0]"
+        <a
+          href="Doctors.html"
+          class="text-sm font-semibold text-slate-700 transition hover:text-blue-600 md:text-base"
           >Doctors</a
         >
       </nav>
     </header>
 
     <main>
-      <section
-        class="relative flex h-64 items-center justify-center overflow-hidden bg-slate-200 md:h-[318px]"
-        aria-labelledby="services-title"
-      >
-        <img
-          src="Rectangle 9 (1).png"
-          alt="Doctor ready to provide care"
-          class="absolute inset-0 h-full w-full  object-cover object-center"
-        />
-        <div class="absolute inset-0 bg-white/45"></div>
+      <section>
+        <section class="relative h-[600px] overflow-visible">
+               <div
+          class="absolute inset-0 bg-cover bg-center h-[600px]"
+          style="background-image: url(&quot;bg3.png &quot;)"
+        ></div>
+        <div class="absolute inset-0 bg-slate-900/45"></div>
         <div class="relative text-center">
           <h1
             id="services-title"
-            class="text-3xl font-extrabold uppercase tracking-tight text-[#2146a5] md:text-4xl"
+            class="text-3xl font-extrabold uppercase text-[#2146a5] md:text-6xl py-100"
           >
             Our services
           </h1>
@@ -66,22 +65,22 @@
       </section>
 
       <section
-        class="mx-auto max-w-5xl px-5 py-12 md:px-12 md:py-16"
+        class="px-5 py-14 md:px-14 md:py-16 mx-30"
         aria-label="Our healthcare services"
       >
         <div
-          class="grid items-center gap-8 py-2 md:grid-cols-[minmax(210px,280px)_1fr] md:gap-16 md:py-3"
+          class="grid items-center gap-8 py-2 md:grid-cols-[minmax(210px,300px)_1fr] md:gap-16 md:py-3"
         >
           <img
             src="bg doc.png"
             alt="Doctor reviewing a patient's information"
-            class="h-52 w-full object-cover md:h-52"
+            class="h-60 w-full object-cover md:h-52"
           />
           <div>
-            <h2 class="text-xl font-extrabold text-[#21428f] md:text-2xl">
+            <h2 class="text-2xl font-extrabold text-[#21428f] md:text-2xl">
               General consultation
             </h2>
-            <p class="mt-2 max-w-2xl text-sm leading-[1.18] md:text-base">
+            <p class="mt-2 max-w-2xl text-sm leading-[1.7] md:text-base font-semibold">
               Visit a doctor for any health concerns, symptoms or general health
               needs and receive guidance on what to do next. Connect with a
               qualified healthcare professional online to discuss your health
@@ -100,13 +99,19 @@
             <h2 class="text-xl font-extrabold text-[#21428f] md:text-2xl">
               Follow-up care
             </h2>
-            <p class="mt-2 text-sm leading-[1.18] md:text-base">
-              Regular follow-ups and treatment monitoring, manage recovery and
-              make sure treatment works well. Stay connected with your
-              healthcare professional after your consultation through regular
-              check-ins, progress monitoring, and continued guidance to help you
-              manage your care, address new concerns, and make adjustments when
-              necessary and ensure your treatment continues to meet your
+            <p class="mt-2 leading-[1.7] md:text-base font-semibold">
+              Regular follow-ups and treatment monitoring, manage recovery 
+              <br>
+              and make sure treatment works well.
+              <br> Stay connected with your
+              healthcare professional after your 
+              <br> consultation through regular
+              check-ins, progress monitoring,<br>
+              and continued guidance to help you
+              manage your care, address <br>
+              new concerns, and make adjustments when
+              necessary and <br>
+              ensure your treatment continues to meet your
               healthcare needs.
             </p>
           </div>
@@ -126,10 +131,10 @@
             class="h-52 w-full object-cover"
           />
           <div>
-            <h2 class="text-xl font-extrabold text-[#21428f] md:text-2xl">
+            <h2 class="text-2xl font-extrabold text-[#21428f] md:text-2xl">
               Health advice
             </h2>
-            <p class="mt-2 max-w-2xl text-sm leading-[1.18] md:text-base">
+            <p class="mt-2 max-w-2xl text-sm leading-[1.7] md:text-base font-semibold">
               Get expert health tips and guidance to help you manage your health
               and make informed care decisions. Get clear and reliable
               healthcare advice from qualified professionals to help you better
@@ -143,65 +148,59 @@
         </div>
       </section>
     </main>
+      <footer class="bg-[#111735] text-white">
+        <div class="mx-auto grid max-w-[1088px] gap-12 px-6 py-14 sm:grid-cols-2 sm:px-10 md:grid-cols-[1.35fr_1fr_1fr_1.1fr] md:gap-8 md:px-0 md:py-14">
+          <div>
+            <a href="index.html" class="inline-block" aria-label="A.P.E.D home">
+              <img src="logo.png" alt="A.P.E.D" class="h-[44px] w-auto brightness-0 invert" />
+            </a>
+            <p class="mt-7 max-w-[190px] text-[14px] leading-[17px] text-slate-100">
+              Speak to qualified healthcare<br />
+              professionals from the<br />
+              comfort of your home.
+            </p>
+            <div class="mt-5 flex gap-3">
+              <a href="#" aria-label="LinkedIn" class="flex h-[38px] w-[38px] items-center justify-center border border-[#29304f] text-slate-300 transition hover:border-white hover:text-white">
+                <svg aria-hidden="true" class="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="currentColor"><path d="M6.5 8.25H3V21h3.5V8.25ZM4.75 3A2.05 2.05 0 1 0 4.75 7.1 2.05 2.05 0 0 0 4.75 3ZM21 13.68c0-3.82-2.04-5.6-4.76-5.6-2.2 0-3.19 1.21-3.74 2.06V8.25H9V21h3.5v-6.3c0-1.66.31-3.27 2.37-3.27 2.03 0 2.06 1.9 2.06 3.38V21H21v-7.32Z" /></svg>
+              </a>
+              <a href="#" aria-label="Instagram" class="flex h-[38px] w-[38px] items-center justify-center border border-[#29304f] text-slate-300 transition hover:border-white hover:text-white">
+                <svg aria-hidden="true" class="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="4" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" /></svg>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h2 class="text-[14px] font-semibold">Navigation</h2>
+            <nav class="mt-5 flex flex-col gap-4 text-[14px] text-slate-100" aria-label="Footer navigation">
+              <a href="AboutUs.html" class="transition hover:text-white">About us</a>
+              <a href="index.html" class="transition hover:text-white">Home</a>
+              <a href="Services.html" class="transition hover:text-white">Services</a>
+              <a href="Doctors.html" class="transition hover:text-white">Doctors</a>
+            </nav>
+          </div>
+          <div>
+            <h2 class="text-[14px] font-semibold">Services</h2>
+            <nav class="mt-5 flex flex-col gap-4 text-[14px] text-slate-100" aria-label="Footer services">
+              <a href="Services.html" class="transition hover:text-white">General consultation</a>
+              <a href="Services.html" class="transition hover:text-white">Follow-up care</a>
+              <a href="Services.html" class="transition hover:text-white">Health advice</a>
+            </nav>
+          </div>
+          <div class="border-l border-[#29304f] pl-7 sm:col-span-2 md:col-span-1">
+            <h2 class="text-[14px] font-semibold">Let's Connect</h2>
+            <div class="mt-5 flex flex-col gap-4 text-[14px] text-slate-300">
+              <a href="mailto:Apedhealthcare.com" class="flex items-center gap-3 transition hover:text-white"><span class="flex h-[32px] w-[32px] items-center justify-center border border-[#29304f] text-slate-400"><svg aria-hidden="true" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" /><path d="m3 7 9 6 9-6" /></svg></span>Apedhealthcare.com</a>
+              <a href="tel:+2349037448857" class="flex items-center gap-3 transition hover:text-white"><span class="flex h-[32px] w-[32px] items-center justify-center border border-[#29304f] text-slate-400"><svg aria-hidden="true" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a14 14 0 0 0 5 5L15 13l5 2v4c-9 1-15-5-15-15Z" /></svg></span>+234 903 744 8857</a>
+              <div class="flex items-center gap-3"><span class="flex h-[32px] w-[32px] items-center justify-center border border-[#29304f] text-slate-400"><svg aria-hidden="true" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" /><circle cx="12" cy="10" r="2.5" /></svg></span>Lagos, Nigeria</div>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-[#29304f]">
+          <div class="mx-auto flex max-w-[1296px] flex-col gap-4 px-6 py-4 text-[14px] text-slate-100 sm:flex-row sm:items-center sm:justify-between md:px-0">
+            <div>healthcare that comes to you.<br />© 2026 A.P.E.D health care</div>
+            <a href="#" class="inline-flex h-[42px] items-center gap-3 border border-[#29304f] px-4 text-slate-300 transition hover:border-white hover:text-white"><span class="flex h-[22px] w-[22px] items-center justify-center rounded-full bg-[#29304f] text-[16px] leading-none">↑</span>Back to top</a>
+          </div>
+        </div>
+      </footer>
 
-    <footer class="bg-[#101735] px-8 py-10 text-white md:px-16">
-      <div
-        class="mx-auto grid max-w-5xl gap-8 text-[10px] leading-5 text-slate-300 md:grid-cols-4 md:gap-12"
-      >
-        <div>
-          <div class="text-xl font-extrabold tracking-wide text-white">
-            <span class="mr-1 inline-block bg-white px-1 text-[#101735]">+</span
-            >A.P.E.D.
-          </div>
-          <p class="mt-4 max-w-[150px] leading-3">
-            Speak to qualified healthcare professionals from the comfort of your
-            home.
-          </p>
-          <div class="mt-4 flex gap-2">
-            <a
-              href="#"
-              class="border border-slate-700 px-2 py-1"
-              aria-label="LinkedIn"
-              >in</a
-            ><a
-              href="#"
-              class="border border-slate-700 px-2 py-1"
-              aria-label="Instagram"
-              >◎</a
-            >
-          </div>
-        </div>
-        <div>
-          <h2 class="mb-3 text-[11px] font-medium text-white">Navigation</h2>
-          <a class="block hover:text-white" href="AboutUs.html">About us</a
-          ><a class="block hover:text-white" href="Doctors.html">Works</a
-          ><a class="block hover:text-white" href="Services.html">Services</a
-          ><a class="block hover:text-white" href="Doctors.html">Doctors</a>
-        </div>
-        <div>
-          <h2 class="mb-3 text-[11px] font-medium text-white">Services</h2>
-          <a class="block hover:text-white" href="#">General consultation</a
-          ><a class="block hover:text-white" href="#">Follow-up care</a
-          ><a class="block hover:text-white" href="#">Health advice</a>
-        </div>
-        <div>
-          <h2 class="mb-3 text-[11px] font-medium text-white">Let's Connect</h2>
-          <p>✉ &nbsp; Apedhealthcare.com</p>
-          <p>⌕ &nbsp; +234 903 744 8857</p>
-          <p>⌖ &nbsp; Lagos, Nigeria</p>
-        </div>
-      </div>
-      <div
-        class="mx-auto mt-8 flex max-w-5xl justify-between border-t border-slate-800 pt-3 text-[9px] text-slate-400"
-      >
-        <span
-          >healthcare that comes to you.<br />© 2028 A.P.E.D health care</span
-        ><a
-          href="#services-title"
-          class="border border-slate-700 px-3 py-1 hover:text-white"
-          >↑ &nbsp; Back to top</a
-        >
-      </div>
-    </footer>
   </body>
 </html>
